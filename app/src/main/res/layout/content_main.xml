@@ -10,35 +10,77 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="lincyu.hw2_3.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/背景">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="D0247796_林佳慶"
-        android:id="@+id/textView" />
-    <EditText
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize = "44sp"
+        android:textColor="@android:color/white"
+        android:text="骰子遊戲"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
-        android:id="@+id/textNumber"
-        android:layout_width="match_parent"
+    <GridLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="請輸入name"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gridLayout">
+
+    </GridLayout>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Say Hello"
-        android:id="@+id/button"
-        android:nestedScrollingEnabled="true"
-        android:layout_below="@+id/textNumber"
-        android:layout_alignEnd="@+id/textNumber" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" "
-        android:layout_below="@+id/button"
-        android:id="@+id/textResult" />
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:text="搖骰子"
+        android:textSize = "24sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/bt_shake"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/按鈕" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:text="比大小"
+        android:textSize = "24sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/bt_compare"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/按鈕" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:text="賭博"
+        android:textSize = "24sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/bt_gamble"
+        android:layout_alignTop="@+id/bt_shake"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/按鈕" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:text="猜點數"
+        android:textSize = "24sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/bt_guess"
+        android:layout_alignTop="@+id/bt_compare"
+        android:layout_alignStart="@+id/bt_gamble"
+        android:background="@drawable/按鈕" />
 
 </RelativeLayout>

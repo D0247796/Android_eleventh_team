@@ -2,11 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="lincyu.hw2_3.MainActivity">
-    <item
-        android:id="@+id/action_reset"
-        android:orderInCategory="100"
-        android:title="Reset"
-        app:showAsAction="never" />
+
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
@@ -15,7 +11,12 @@
     <item
         android:id="@+id/action_about"
         android:orderInCategory="100"
-        android:title="About"
+        android:title="關於作者"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_quiet"
+        android:orderInCategory="100"
+        android:title="退出"
         app:showAsAction="never" />
 
 </menu>

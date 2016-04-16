@@ -2,6 +2,7 @@ package lincyu.hw2_3;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,32 +17,69 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    TextView textViewRes;
-    Button submit;
-    EditText editTextNum;
+
+    Button bt_shake,bt_guess,bt_compare,bt_gamble;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        editTextNum =(EditText)findViewById(R.id.textNumber);
-        submit=(Button)findViewById(R.id.button);
-        textViewRes=(TextView)findViewById(R.id.textResult);
-        submit.setOnClickListener(submitOnClickListener);
+        bt_shake = (Button)findViewById(R.id.bt_shake);
+        bt_compare =(Button)findViewById(R.id.bt_compare);
+        bt_gamble = (Button)findViewById(R.id.bt_gamble);
+        bt_guess = (Button)findViewById(R.id.bt_guess);
+
+        bt_shake.setOnClickListener(bt_shake_CL);
+        bt_compare.setOnClickListener(bt_compare_CL);
+        bt_gamble.setOnClickListener(bt_gamble_CL);
+        bt_guess.setOnClickListener(bt_guess_CL);
 
 
 
 
 
     }
-    private View.OnClickListener submitOnClickListener = new View.OnClickListener() {
+    private View.OnClickListener bt_shake_CL = new View.OnClickListener() {
 
         @Override
         public void onClick (View v) {
-            Toast t = Toast.makeText(MainActivity.this,"哈囉,"+editTextNum.getText(), Toast.LENGTH_SHORT);
+            Intent intent = new Intent();
+            intent.setClass(MainActivity.this, Main2Activity.class);
+            startActivity(intent);
 
-            t.show();
+        }
+    };
+    private View.OnClickListener bt_compare_CL = new View.OnClickListener() {
+
+        @Override
+        public void onClick (View v) {
+            Intent intent = new Intent();
+            intent.setClass(MainActivity.this, Main3Activity.class);
+            startActivity(intent);
+
+        }
+    };
+    private View.OnClickListener bt_gamble_CL = new View.OnClickListener() {
+
+        @Override
+        public void onClick (View v) {
+            Intent intent = new Intent();
+            intent.setClass(MainActivity.this, Main4Activity.class);
+            startActivity(intent);
+
+
+        }
+    };
+    private View.OnClickListener bt_guess_CL = new View.OnClickListener() {
+
+        @Override
+        public void onClick (View v) {
+            Intent intent = new Intent();
+            intent.setClass(MainActivity.this, Main5Activity.class);
+            startActivity(intent);
+
 
         }
     };
@@ -62,8 +100,8 @@ public class MainActivity extends AppCompatActivity {
         switch (id){
             case R.id.action_about:
                 AlertDialog.Builder ad = new AlertDialog.Builder(this);
-                ad.setTitle("哈囉 這是關於本程式");
-                ad.setMessage("作者:林佳慶_D0247796");
+                ad.setTitle("關於本程式");
+                ad.setMessage("組別:11\n作者:\n林佳慶_D0247796");
 
                 DialogInterface.OnClickListener listener =
                         new DialogInterface.OnClickListener() {
@@ -74,8 +112,8 @@ public class MainActivity extends AppCompatActivity {
                 ad.setPositiveButton("確定", listener);
                 ad.show();
                 break;
-            case R.id.action_reset:
-                editTextNum.setText("");
+            case R.id.action_quiet:
+                finish();
                 break;
 
         }
