@@ -8,6 +8,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="lincyu.hw2_3.Main4Activity"
-    android:background="@drawable/背景">
+    android:background="@drawable/background">
 
 </RelativeLayout>

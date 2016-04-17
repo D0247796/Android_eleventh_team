@@ -8,12 +8,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="lincyu.hw2_3.Main2Activity"
-    android:background="@drawable/背景">
+    android:background="@drawable/background">
 
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:background="@drawable/搖骰子背景"
+        android:background="@drawable/main2"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"></FrameLayout>
 
@@ -26,5 +26,5 @@
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/按鈕" />
+        android:background="@drawable/button" />
 </RelativeLayout>

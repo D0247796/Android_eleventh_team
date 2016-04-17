@@ -8,12 +8,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="lincyu.hw2_3.Main3Activity"
-    android:background="@drawable/背景">
+    android:background="@drawable/background">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/比大小"
+        android:background="@drawable/main3"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/frameLayout"></FrameLayout>
@@ -38,7 +38,7 @@
         android:layout_below="@+id/tA_people"
         android:layout_alignParentStart="true"
         android:layout_marginTop="46dp"
-        android:background="@drawable/按鈕" />
+        android:background="@drawable/button" />
 
     <Button
         android:layout_width="120dp"
@@ -49,6 +49,6 @@
         android:id="@+id/bt_big"
         android:layout_alignBottom="@+id/bt_small"
         android:layout_alignParentEnd="true"
-        android:background="@drawable/按鈕" />
+        android:background="@drawable/button" />
 
 </RelativeLayout>
