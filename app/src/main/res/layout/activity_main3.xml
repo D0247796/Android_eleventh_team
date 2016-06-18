@@ -10,23 +10,17 @@
     tools:context="lincyu.eleventh_project.Main3Activity"
     android:background="@drawable/background">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/main3"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/frameLayout"></FrameLayout>
     <EditText
 
-        android:id="@+id/tA_people"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="多少人比賽"
-        android:background="#ffffff"
-        android:layout_below="@+id/frameLayout"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="32dp" />
+        android:id="@+id/et_people"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:hint="人數"
+        android:layout_marginTop="37dp"
+        android:numeric="integer"
+        android:layout_below="@+id/tv_state"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 
     <Button
         android:layout_width="120dp"
@@ -34,11 +28,10 @@
         android:text="比小"
         android:textSize = "24sp"
         android:textColor="@android:color/white"
-        android:id="@+id/bt_small"
-        android:layout_below="@+id/tA_people"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="46dp"
-        android:background="@drawable/button" />
+        android:id="@+id/btn_small"
+        android:background="@drawable/button"
+        android:layout_below="@+id/tv_state"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="120dp"
@@ -46,9 +39,41 @@
         android:text="比大"
         android:textSize = "24sp"
         android:textColor="@android:color/white"
-        android:id="@+id/bt_big"
-        android:layout_alignBottom="@+id/bt_small"
+        android:id="@+id/btn_big"
+        android:layout_alignBottom="@+id/btn_small"
         android:layout_alignParentEnd="true"
         android:background="@drawable/button" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/tv_state"
+        android:layout_centerHorizontal="true"
+        android:text="比大還比小"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="50dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="重來"
+        android:id="@+id/btn_restart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/btn_big"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="搖動"
+        android:id="@+id/btn_shake"
+        android:background="@drawable/button"
+        android:textSize="24dp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/btn_restart"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

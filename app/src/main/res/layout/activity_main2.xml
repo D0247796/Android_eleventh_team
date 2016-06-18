@@ -10,22 +10,54 @@
     tools:context="lincyu.eleventh_project.Main2Activity"
     android:background="@drawable/background">
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:background="@drawable/main2"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"></FrameLayout>
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="90dp"
         android:text="開始"
         android:textSize = "34sp"
         android:textColor="@android:color/white"
-        android:id="@+id/button"
+        android:id="@+id/bt_start"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/button" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="請先輸入最大最小值"
+        android:id="@+id/tv_dice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="#fefbfb" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/et_maxnumber"
+        android:layout_above="@+id/bt_start"
+        android:layout_centerHorizontal="true"
+        android:autoText="false"
+        android:background="#7fff1a00"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:hint="最大值"
+        android:textColor="#ffffff"
+        android:numeric="integer"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/et_minnumber"
+        android:layout_above="@+id/et_maxnumber"
+        android:layout_centerHorizontal="true"
+        android:background="#7fff1a00"
+        android:textSize="25dp"
+        android:hint="最小值"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:numeric="integer"/>
+
 
 </RelativeLayout>

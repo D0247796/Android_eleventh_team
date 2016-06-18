@@ -4,25 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="lincyu.eleventh_project.Main2Activity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/rule"
         android:orderInCategory="100"
-        android:title="設定"
-        app:showAsAction="never" />
-    <item
-        android:id="@+id/action_about"
-        android:orderInCategory="100"
-        android:title="關於作者"
+        android:title="規則"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_quiet"
         android:orderInCategory="100"
         android:title="退出"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/action_back"
-        android:orderInCategory="100"
-        android:title="回上一頁"
-        app:showAsAction="never" />
+
 
 
 </menu>

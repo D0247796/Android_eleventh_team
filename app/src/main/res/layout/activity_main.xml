@@ -16,7 +16,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize = "44sp"
         android:textColor="@android:color/white"
-        android:text="骰子遊戲"
+        android:text="數字遊戲"
         android:id="@+id/textView2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
@@ -33,7 +33,7 @@
     <Button
         android:layout_width="120dp"
         android:layout_height="70dp"
-        android:text="搖骰子"
+        android:text="抽數字"
         android:textSize = "24sp"
         android:textColor="@android:color/white"
         android:id="@+id/bt_shake"
@@ -71,7 +71,7 @@
     <Button
         android:layout_width="120dp"
         android:layout_height="70dp"
-        android:text="猜點數"
+        android:text="猜數字"
         android:textSize = "24sp"
         android:textColor="@android:color/white"
         android:id="@+id/bt_guess"

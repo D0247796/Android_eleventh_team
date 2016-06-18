@@ -13,7 +13,11 @@
         android:orderInCategory="100"
         android:title="退出"
         app:showAsAction="never" />
-
+    <item
+        android:id="@+id/action_back"
+        android:orderInCategory="100"
+        android:title="回上一頁"
+        app:showAsAction="never" />
 
 
 </menu>

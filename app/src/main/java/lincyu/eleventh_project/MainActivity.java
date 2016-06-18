@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick (View v) {
             Intent intent = new Intent();
-            intent.setClass(MainActivity.this, Main4Activity.class);
+            intent.setClass(MainActivity.this, gamble_start.class);
             startActivity(intent);
 
 
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         switch (id){
             case R.id.action_about:
                 AlertDialog.Builder ad = new AlertDialog.Builder(this);
-                ad.setTitle("關於本程式");
+                ad.setTitle("關於作者");
                 ad.setMessage("組別:11\n作者:\n林佳慶_D0247796");
 
                 DialogInterface.OnClickListener listener =
@@ -112,9 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+
 
         return super.onOptionsItemSelected(item);
     }

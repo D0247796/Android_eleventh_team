@@ -10,10 +10,44 @@
     tools:context="lincyu.eleventh_project.Main5Activity"
     android:background="@drawable/background">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="請填入給人猜的數字(1~100)"
+        android:id="@+id/tv_state"
+        android:layout_marginTop="40dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"></FrameLayout>
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/et_number"
+        android:layout_below="@+id/tv_state"
+        android:layout_centerHorizontal="true"
+        android:hint="數字輸入區"
+        android:numeric="integer"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="猜測"
+        android:id="@+id/btn_guess"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="106dp"
+        android:background="@drawable/button" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="重新"
+        android:id="@+id/btn_restart"
+        android:layout_alignBottom="@+id/btn_guess"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button" />
 
 </RelativeLayout>
